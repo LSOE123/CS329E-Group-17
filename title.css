@@ -1,0 +1,13 @@
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.header h1 {
+  font-family: "Lucida Handwriting", "Courier New", monospace;
+  position: relative;
+  top: 34px;
+  left: 10px;
+}
+
