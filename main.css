@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("./fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345") format("woff2"),
+url("./fonts/bootstrap-icons.woff?a74547b2f0863226942ff8ded57db345") format("woff");
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #3fbbc0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #65c9cd;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.header h1 {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: 34px;
+  left: 10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+div.mid h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+div p {
+    text-align: center;
+}
+
+.doctors .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(63, 187, 192, 0.1);
+}
+
+.doctors .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.doctors .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctors .member .social a {
+  transition: color 0.3s;
+  color: #555555;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctors .member .social a i {
+  line-height: 0;
+}
+
+.doctors .member .social a:hover {
+  color: #3fbbc0;
+}
+
+.doctors .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.doctors .member .member-info {
+  padding: 25px 15px;
+}
+
+.doctors .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #555555;
+}
+
+.doctors .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.doctors .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.doctors .member:hover .social {
+  opacity: 1;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f7fcfc;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.container {
+  width:100%;
+  padding-right:var(--bs-gutter-x,.75rem);
+  padding-left:var(--bs-gutter-x,.75rem);
+  margin-right:auto;
+  margin-left:auto;
+}
+
+@media (min-width:576px){.container,.container-sm{max-width:540px}}
+@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}
+@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}
+@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}
+@media (min-width:1400px){.container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{max-width:1320px}}
+
+.row {
+  --bs-gutter-x:1.5rem;
+  --bs-gutter-y:0;
+  display:flex;
+  flex-wrap: wrap;
+  margin-top:calc(-1 * var(--bs-gutter-y));
+  margin-right:calc(-.5 * var(--bs-gutter-x));
+  margin-left:calc(-.5 * var(--bs-gutter-x));
+}
+
+.row>* {
+  flex-shrink:0;
+  width:100%;
+  max-width:100%;
+  padding-right:calc(var(--bs-gutter-x) * .5);
+  padding-left:calc(var(--bs-gutter-x) * .5);
+  margin-top:var(--bs-gutter-y);
+}
+
+.d-flex{
+  display:flex !important;
+}
+
+.col-lg-3{
+  flex: 0 0 auto;
+  width:22%;
+}
+
+
+.img-fluid{
+  max-width:100%;
+  height:auto;
+}
+
+.align-items-stretch{
+  align-items: stretch !important;
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bi-twitter::before {
+  content: "\f5ef";
+}
+
+.bi-facebook::before {
+  content: "\f344";
+}
+
+.bi-instagram::before {
+  content: "\f437";
+}
+
+.bi-linkedin::before {
+  content: "\f472";
+}
