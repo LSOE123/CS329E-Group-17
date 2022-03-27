@@ -279,46 +279,55 @@ section {
  /* using class mid */
 .country_1 {
   padding-bottom: 3em;
+  height: 33%;
 }
 
 .country_2 {
   padding-bottom: 3em;
+  height: 33%;
 }
 
 .country_3 {
   padding-bottom: 3em;
+  height: 33%;
 }
 
 #left_s {
   width: 30%;
+  height: 100%;
   float: left;
 }
 
  #right_l {
    width: 50%;
+   height: 100%;
    float: left;
  }
 
  #left_l {
    width: 50%;
+   height: 100%;
    float: left;
  }
 
  #right_s {
    width: 30%;
+   height: 100%;
    float: left;
  }
 
  .blank_column_left {
-   height: 100px;
+   height: 300px;
    width: 10%;
    float: left;
+   /*background-color: green;*/
  }
 
  .blank_column_right {
-   height: 100px;
+   height: 300px;
    width: 10%;
    float: left;
+   /*background-color: yellow;*/
  }
 
 
