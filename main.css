@@ -311,14 +311,12 @@ section {
 
  .blank_column_left {
    height: 100px;
-   background-color: green;
    width: 10%;
    float: left;
  }
 
  .blank_column_right {
    height: 100px;
-   background-color: yellow;
    width: 10%;
    float: left;
  }
