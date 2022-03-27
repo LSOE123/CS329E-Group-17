@@ -71,7 +71,7 @@ div.mid h2 {
     text-align: center;
 }
 
-div p {
+div.mid p {
     text-align: center;
 }
 
@@ -274,3 +274,51 @@ section {
 .bi-linkedin::before {
   content: "\f472";
 }
+
+/* Start css for destinations, cuisines, covid html files */
+ /* using class mid */
+.country_1 {
+  padding-bottom: 3em;
+}
+
+.country_2 {
+  padding-bottom: 3em;
+}
+
+.country_3 {
+  padding-bottom: 3em;
+}
+
+#left_s {
+  width: 30%;
+  float: left;
+}
+
+ #right_l {
+   width: 50%;
+   float: left;
+ }
+
+ #left_l {
+   width: 50%;
+   float: left;
+ }
+
+ #right_s {
+   width: 30%;
+   float: left;
+ }
+
+ .blank_column_left {
+   height: 100px;
+   background-color: green;
+   width: 10%;
+   float: left;
+ }
+
+ .blank_column_right {
+   height: 100px;
+   background-color: yellow;
+   width: 10%;
+   float: left;
+ }
