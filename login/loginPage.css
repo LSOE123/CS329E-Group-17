@@ -1,0 +1,66 @@
+html {
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+body{
+    max-width: 490px;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.buttonsection {
+    text-align: center;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    width: 170px;
+    background-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.button {
+    width:125px;
+    font-size:12pt;
+    border-radius:4px;
+    text-align: center;
+    background-color: darkgrey;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+#textForm{
+    text-align: right;
+    background-color: white;
+    border-radius: 7px;
+    border: 3px black solid;
+    max-width: 630px;
+    padding: 10px;
+}
+
+input[type=text], input[type=password] {
+    font-family: inherit;
+    font-size: 16px;
+    width: 250px;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+   background-color: rgb(169, 169, 169);
+}
