@@ -28,13 +28,27 @@
   </div>
 
   <div class="topnav">
-    <a href="home.html" style="width:12%">Home</a>
-    <a href="destinations.html" style="width:12%">Destinations</a>
-    <a href="cuisines.html" style="width:12%">Cuisines</a>
-    <a href="Flights.html" style="width:12%">Flights</a>
-    <a href="covid.html" style="width:12%">Covid-19</a>
-    <a class="active" href="contactus.html" style="width:12%">Contact Us</a>
-    <a href="login/loginPage.html" style="width:12%">Login</a>
+    <a href="home.php" style="width:12%">Home</a>
+    <a href="destinations.php" style="width:12%">Destinations</a>
+    <a href="cuisines.php" style="width:12%">Cuisines</a>
+    <a href="Flights.php" style="width:12%">Flights</a>
+    <a href="covid.php" style="width:12%">Covid-19</a>
+    <a class="active" href="contactus.php" style="width:12%">Contact Us</a>
+    <?php
+       session_start();
+       if ($_COOKIE["time"] < time()) {
+         session_destroy();
+         setcookie("reference", "contactus.php", time()+3600, "/");
+         echo "<a href='newlogin.php' style='width:12%'>Login</a>";
+       }
+       else if (isset($_SESSION["username"])) {
+         echo "<a href='newlogin.php' style='width:12%'> Welcome " . $_SESSION["username"] . "</a>";
+       }
+       else {
+         setcookie("reference", "contactus.php", time()+3600, "/");
+         echo "<a href='newlogin.php' style='width:12%'>Login</a>";
+       }
+    ?>
   </div>
 
    <!-- ======= Doctors Section ======= -->
