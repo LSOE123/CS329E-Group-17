@@ -55,10 +55,8 @@
   <div class="country_1">
     <p class="blank_column_left">
     </p>
-
-    <img id="left_s" src="./assets/img/destinations/arc.jpg" alt="Picture of Paris"/>
-
-    <div class="mid" id="right_l">
+    <iframe id="left_v" src="https://www.youtube.com/embed/oz45k8EYblk"></iframe>
+    <div class="mid" id="right_t">
       <h2>Paris, France</h2>
       <p>Known as both the City of Love and Lights, Paris is the most popular tourist destination in
 Europe. This city is well renowned for not only its stunning views but also world-class cuisine.</p>
@@ -80,7 +78,7 @@ human architecture. The city is a great choice for people who are interested in 
 rich history of England.</p>
     </div>
 
-    <img id="right_s" src="./assets/img/destinations/london.jpg" alt="Picture of London"/>
+    <iframe id="left_v" src="https://www.youtube.com/embed/X8zLJlU_-60"></iframe>
 
     <p class="blank_column_right">
     </p>
@@ -90,7 +88,7 @@ rich history of England.</p>
     <p class="blank_column_left">
     </p>
 
-    <img id="left_s" src="./assets/img/destinations/bangkok.jpg" alt="Picture of Bangkok"/>
+    <iframe id="left_v" src="https://www.youtube.com/embed/fA-ZJnTDO2g"></iframe>
 
     <div class="mid" id="right_l">
       <h2>Bangkok, Thailand</h2>

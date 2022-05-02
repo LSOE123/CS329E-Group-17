@@ -317,7 +317,16 @@ section {
    height: 100%;
    float: left;
  }
-
+ #left_v {
+  width: 420px;
+  height: 345px;
+  float: left;
+}
+#right_v {
+  width: 420px;
+  height: 345px;
+  float: left;
+}
  .blank_column_left {
    height: 300px;
    width: 10%;
