@@ -67,10 +67,10 @@
             <div class="member-img">
               <img src="assets/img/doctors/yixing.jpeg" class="img-fluid" alt="">
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
+                <!-- <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/yixing-ma/"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info">
@@ -86,10 +86,10 @@
             <div class="member-img">
               <img src="assets/img/doctors/ahmad.png" class="img-fluid" alt="">
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
+                <!-- <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/ahmadelessawy"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info">
@@ -105,14 +105,14 @@
             <div class="member-img">
               <img src="assets/img/doctors/ahmet.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
+                <!-- <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/ahmetnalcaci/"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info">
-              <h4>Ahmet Nalcaci</h4>
+              <h4>Ahmet Nalcaci</h4> 
               <span>Major - Economics</span>
               <span>I have been to Turkey, Italy, Germany, France, Netherlands, Norway, Sudan and many states in United States</span>
             </div>
@@ -124,10 +124,10 @@
             <div class="member-img">
               <img src="assets/img/doctors/michelle.png" class="img-fluid" alt="">
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
+                <!-- <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/michelle-brun-3b5663175"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info">
