@@ -55,11 +55,14 @@
    <section id="doctors" class="doctors section-bg">
     <div class="container" data-aos="fade-up">
 
+      <center>
       <div class="section-title">
         <h2>Contact Us</h2>
         <p>Group 17</p>
       </div>
+      </center>
 
+      <center>
       <div class="row">
 
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
@@ -112,7 +115,7 @@
               </div>
             </div>
             <div class="member-info">
-              <h4>Ahmet Nalcaci</h4> 
+              <h4>Ahmet Nalcaci</h4>
               <span>Major - Economics</span>
               <span>I have been to Turkey, Italy, Germany, France, Netherlands, Norway, Sudan and many states in United States</span>
             </div>
@@ -139,6 +142,7 @@
         </div>
 
       </div>
+      </center>
 
     </div>
   </section><!-- End Doctors Section -->

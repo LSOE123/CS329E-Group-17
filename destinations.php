@@ -60,7 +60,7 @@
     <iframe id="left_v" src="https://www.youtube.com/embed/oz45k8EYblk"></iframe>
     </td>
     <td>
-    <div class="mid" id="right_t">
+    <div class="mid" id="right_l">
       <h2>Paris, France</h2>
       <p>Known as both the City of Love and Lights, Paris is the most popular tourist destination in
 Europe. This city is well renowned for not only its stunning views but also world-class cuisine.</p>
@@ -74,20 +74,16 @@ Europe. This city is well renowned for not only its stunning views but also worl
   <div class="country_2">
     <p class="blank_column_left">
     </p>
-<table>
-<tr>
-<td>
+
     <div class="mid" id="left_l">
       <h2>London, United Kingdom</h2>
       <p>With attractions like Big Ben and Buckingham Palace, London is home to many marvels of
 human architecture. The city is a great choice for people who are interested in the unique and
 rich history of England.</p>
     </div>
-    </td>
-<td>
-    <iframe id="left_v" src="https://www.youtube.com/embed/X8zLJlU_-60"></iframe>
-    </td>
-</tr>
+
+    <iframe id="right_v" src="https://www.youtube.com/embed/X8zLJlU_-60"></iframe>
+
     <p class="blank_column_right">
     </p>
   </div>
@@ -95,20 +91,16 @@ rich history of England.</p>
   <div class="country_3">
     <p class="blank_column_left">
     </p>
-<tr>
-<td>
+
     <iframe id="left_v" src="https://www.youtube.com/embed/fA-ZJnTDO2g"></iframe>
-</td>
-<td>
+
     <div class="mid" id="right_l">
       <h2>Bangkok, Thailand</h2>
       <p>Bangkok is the most popular destination in the world, and for good reason. With its abundant
 		 parks and beaches, this destination is ideal for people who want to really get out there and
 		 experience mother nature.</p>
     </div>
-    </td>
-    </tr>
-    </table>
+
 
     <p class="blank_column_right">
     </p>
