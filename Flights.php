@@ -48,6 +48,14 @@
     ?>
   </div>
 
+  <div class="mid">
+      <h2><a href="https://www.google.com/travel/flights">Google Flights</a></h2>
+      <p style="text-align:center;"><img src="./assets/img/airplane-windows.png" alt="Picture of Airplane" class="center"/></p>
+      <p>
+          Click on the header hyperlink to purchase tickets through Google Flights.
+          <br> We highly recommend their website due to convenience and good prices.
+      </p>
+  </div>
 
   <footer>
   	<br>
