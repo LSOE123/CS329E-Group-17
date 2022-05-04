@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title> Login </title>
+      <title> Create Account </title>
       <meta charset="UTF-8">
       <meta name="description" content="Cookies">
       <meta name="author" content="Michelle Brun">
@@ -41,7 +41,7 @@
 
            queryString +=  "&username=" + username + "&server=" + server + "&user=" + user + "&pwd=" + pwd + "&dbName=" + dbName;
 
-           ajaxRequest.open("GET", "search_users.php" + queryString, true);
+           ajaxRequest.open("GET", "new_users.php" + queryString, true);
            ajaxRequest.send(null);
         }
 
@@ -74,7 +74,7 @@
 
    $mysqli = new mysqli ($server, $user, $pwd, $dbName);
 
-   echo "<h2> Login </h2>";
+   echo "<h2> Create Account </h2>";
 
    echo "<form method=\"\" > <table> <tr><td>Username:</td>";
    echo "<td> <input type = 'text' id = 'username' autofocus> </td>";
@@ -85,13 +85,13 @@
    echo "</tr> <tr> <td>";
 
    echo "<input type = \"button\" onclick = \"ajaxFunction('$server','$user',
-        '$pwd','$dbName')\" value = \"login\"/> ";
+        '$pwd','$dbName')\" value = \"create\"/> ";
    echo "<input type = \"reset\" value = \"reset\"> <br><br> ";
    echo "</td> </tr> </table> </form>";
 
 
 ?>
 
-   <div id = 'ajaxDiv'> Please log in or <a href="createacc.php"> create account.</a> </div>
+   <div id = 'ajaxDiv'> Please create account or <a href="newlogin.php"> login.</a> </div>
 </body>
 </html>
