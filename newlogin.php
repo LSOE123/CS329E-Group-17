@@ -93,5 +93,17 @@
 ?>
 
    <div id = 'ajaxDiv'> Please log in or <a href="createacc.php"> create account.</a> </div>
-</body>
-</html>
+   <footer>
+   	<br>
+   	<span>&copy; Joy Compass | </span>
+       <span>Designed by Group 17 | </span>
+       <span>
+       Page Last Updated:
+       <script>
+   		document.write(document.lastModified);
+       </script>
+       </span>
+   </footer>
+
+ </body>
+ </html>

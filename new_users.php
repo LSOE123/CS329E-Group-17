@@ -53,7 +53,7 @@
          echo "Registration failed. Try Again";
        }
        else{
-         setcookie("time", time()+120, time()+360, "/");
+         setcookie("time", time()+3600, time()+4000, "/");
          $_SESSION["username"] = $username;
          echo "New user registered. Welcome $username.<br>";
        }

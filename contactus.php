@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -35,14 +36,21 @@
     <a href="covid.php" style="width:12%">Covid-19</a>
     <a class="active" href="contactus.php" style="width:12%">Contact Us</a>
     <?php
-       session_start();
        if ($_COOKIE["time"] < time()) {
+         $_SESSION = array();
+         if (ini_get("session.use_cookies")) {
+             $params = session_get_cookie_params();
+             setcookie(session_name(), '', time() - 42000,
+                 $params["path"], $params["domain"],
+                 $params["secure"], $params["httponly"]
+             );
+         }
          session_destroy();
          setcookie("reference", "contactus.php", time()+3600, "/");
          echo "<a href='newlogin.php' style='width:12%'>Login</a>";
        }
        else if (isset($_SESSION["username"])) {
-         echo "<a href='newlogin.php' style='width:12%'> Welcome " . $_SESSION["username"] . "</a>";
+         echo "<a href='logout.php' style='width:12%'>Logout</a>";
        }
        else {
          setcookie("reference", "contactus.php", time()+3600, "/");

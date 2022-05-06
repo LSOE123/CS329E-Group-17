@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -31,14 +32,21 @@
     <a href="covid.php" style="width:12%">Covid-19</a>
     <a href="contactus.php" style="width:12%">Contact Us</a>
     <?php
-       session_start();
        if ($_COOKIE["time"] < time()) {
+         $_SESSION = array();
+         if (ini_get("session.use_cookies")) {
+             $params = session_get_cookie_params();
+             setcookie(session_name(), '', time() - 42000,
+                 $params["path"], $params["domain"],
+                 $params["secure"], $params["httponly"]
+             );
+         }
          session_destroy();
          setcookie("reference", "cuisines.php", time()+3600, "/");
          echo "<a href='newlogin.php' style='width:12%'>Login</a>";
        }
        else if (isset($_SESSION["username"])) {
-         echo "<a href='newlogin.php' style='width:12%'> Welcome " . $_SESSION["username"] . "</a>";
+         echo "<a href='logout.php' style='width:12%'>Logout</a>";
        }
        else {
          setcookie("reference", "cuisines.php", time()+3600, "/");
@@ -63,6 +71,11 @@
       <p>Originating from Nice, Ratatouille is a colorful vegetable stew well known for its inclusion in the
 popular Disney movie of the same name. seasoned with a variety of herbs and spices, France is
 the best place to have a taste of this unreal dish.</p>
+<?php
+   if (isset($_SESSION["username"])){
+     echo "<p><a href='france.php'>I'm interested.</a></p>";
+   }
+?>
     </div>
 
     <p class="blank_column_right">
@@ -79,6 +92,11 @@ the best place to have a taste of this unreal dish.</p>
       <p>What screams comfort food better than battered fish, fries, and a nice sauce on the side? England
 has introduced this incredible combo to the world, and London is home to some of the best spots
 in the entire world.</p>
+<?php
+   if (isset($_SESSION["username"])){
+     echo "<p><a href='uk.php'>I'm interested.</a></p>";
+   }
+?>
     </div>
 
     <img id="right_s" src="./assets/img/cuisines/fish.jpg" alt="Picture of Fish and Chips"/>
@@ -97,10 +115,16 @@ in the entire world.</p>
       <h2>Pad Thai</h2>
       <p>Pad Thai was actually invented by the prime minister of Thailand in the 1930’s. It is a sitr fried
 noodle dish that has several regional variations based on where one looks within Thailand.</p>
+<?php
+  if (isset($_SESSION["username"])){
+    echo "<p><a href='thailand.php'>I'm interested.</a></p>";
+  }
+?>
     </div>
 
     <p class="blank_column_right">
     </p>
+  </div>
 
   <footer>
   	<br>

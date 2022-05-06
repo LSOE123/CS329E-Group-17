@@ -56,27 +56,19 @@
   </div>
 
   <div id="title" class="mid">
-    <h2>Destinations</h2>
+    <h2>France</h2>
   </div>
 
 
   <div class="country_1">
     <p class="blank_column_left">
     </p>
-
     <iframe id="left_v" src="https://www.youtube.com/embed/oz45k8EYblk"></iframe>
-
-    <div class="mid" id="right_l">
-      <h2>Paris, France</h2>
-      <p>Known as both the City of Love and Lights, Paris is the most popular tourist destination in
-Europe. This city is well renowned for not only its stunning views but also world-class cuisine.</p>
-<?php
-   if (isset($_SESSION["username"])){
-     echo "<p><a href='france.php'>I'm interested.</a></p>";
-   }
-?>
-    </div>
-
+      <div class="mid" id="right_l">
+        <h2>Paris</h2>
+        <p>Known as both the City of Love and Lights, Paris is the most popular tourist destination in
+  Europe. This city is well renowned for not only its stunning views but also world-class cuisine.</p>
+      </div>
     <p class="blank_column_right">
     </p>
   </div>
@@ -87,41 +79,35 @@ Europe. This city is well renowned for not only its stunning views but also worl
     </p>
 
     <div class="mid" id="left_l">
-      <h2>London, United Kingdom</h2>
-      <p>With attractions like Big Ben and Buckingham Palace, London is home to many marvels of
-human architecture. The city is a great choice for people who are interested in the unique and
-rich history of England.</p>
-<?php
-   if (isset($_SESSION["username"])){
-     echo "<p><a href='uk.php'>I'm interested.</a></p>";
-   }
-?>
+      <h2>Ratatouille</h2>
+      <p>Originating from Nice, Ratatouille is a colorful vegetable stew well known for its inclusion in the
+popular Disney movie of the same name. seasoned with a variety of herbs and spices, France is
+the best place to have a taste of this unreal dish.</p>
     </div>
 
-    <iframe id="right_v" src="https://www.youtube.com/embed/X8zLJlU_-60"></iframe>
+    <img id="right_s" src="./assets/img/cuisines/rat.jpg" alt="Picture of Ratatouille"/>
 
     <p class="blank_column_right">
     </p>
   </div>
 
+
   <div class="country_3">
     <p class="blank_column_left">
     </p>
 
-    <iframe id="left_v" src="https://www.youtube.com/embed/fA-ZJnTDO2g"></iframe>
+    <img id="left_s" src="./assets/img/covid/covid.jpg" alt="Picture of COVID"/>
 
     <div class="mid" id="right_l">
-      <h2>Bangkok, Thailand</h2>
-      <p>Bangkok is the most popular destination in the world, and for good reason. With its abundant
-		 parks and beaches, this destination is ideal for people who want to really get out there and
-		 experience mother nature.</p>
-<?php
-  if (isset($_SESSION["username"])){
-    echo "<p><a href='thailand.php'>I'm interested.</a></p>";
-  }
-?>
+      <h2>Travel Restrictions</h2>
+      <p>Vaccinated travelers must prove that they have received all prescribed doses of
+      an approved vaccine.</p>
+      <p>Unvaccinated travelers must provide a negative PCR test taken no more than 72
+      hours before the arrival date, a negative antigen test taken no more than 48
+      hours before the arrival date, or a certificate of recovery dated more than
+      eleven days and less than six months ago.</p>
+      <p>For more information click <a href="https://www.welcometofrance.com/en/covid-19-entry-and-stay-of-foreign-talents-in-france">here</a>.</p>
     </div>
-
     <p class="blank_column_right">
     </p>
   </div>

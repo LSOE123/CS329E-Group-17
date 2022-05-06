@@ -55,7 +55,7 @@
    }
 
    else {
-     setcookie("time", time()+120, time()+360, "/");
+     setcookie("time", time()+3600, time()+4000, "/");
      $_SESSION["username"] = $username;
      echo "Welcome $username.";
 

@@ -56,49 +56,37 @@
   </div>
 
   <div id="title" class="mid">
-    <h2>Destinations</h2>
+    <h2>Thailand</h2>
   </div>
-
 
   <div class="country_1">
     <p class="blank_column_left">
     </p>
 
-    <iframe id="left_v" src="https://www.youtube.com/embed/oz45k8EYblk"></iframe>
+    <iframe id="left_v" src="https://www.youtube.com/embed/fA-ZJnTDO2g"></iframe>
 
     <div class="mid" id="right_l">
-      <h2>Paris, France</h2>
-      <p>Known as both the City of Love and Lights, Paris is the most popular tourist destination in
-Europe. This city is well renowned for not only its stunning views but also world-class cuisine.</p>
-<?php
-   if (isset($_SESSION["username"])){
-     echo "<p><a href='france.php'>I'm interested.</a></p>";
-   }
-?>
+      <h2>Bangkok</h2>
+      <p>Bangkok is the most popular destination in the world, and for good reason. With its abundant
+		 parks and beaches, this destination is ideal for people who want to really get out there and
+		 experience mother nature.</p>
     </div>
 
     <p class="blank_column_right">
     </p>
   </div>
 
-
   <div class="country_2">
     <p class="blank_column_left">
     </p>
 
     <div class="mid" id="left_l">
-      <h2>London, United Kingdom</h2>
-      <p>With attractions like Big Ben and Buckingham Palace, London is home to many marvels of
-human architecture. The city is a great choice for people who are interested in the unique and
-rich history of England.</p>
-<?php
-   if (isset($_SESSION["username"])){
-     echo "<p><a href='uk.php'>I'm interested.</a></p>";
-   }
-?>
+      <h2>Pad Thai</h2>
+      <p>Pad Thai was actually invented by the prime minister of Thailand in the 1930’s. It is a sitr fried
+noodle dish that has several regional variations based on where one looks within Thailand.</p>
     </div>
 
-    <iframe id="right_v" src="https://www.youtube.com/embed/X8zLJlU_-60"></iframe>
+    <img id="right_s" src="./assets/img/cuisines/padthai.jpg" alt="Picture of Pad Thai"/>
 
     <p class="blank_column_right">
     </p>
@@ -108,18 +96,17 @@ rich history of England.</p>
     <p class="blank_column_left">
     </p>
 
-    <iframe id="left_v" src="https://www.youtube.com/embed/fA-ZJnTDO2g"></iframe>
+    <img id="left_s" src="./assets/img/covid/vaccine.jpg" alt="Picture of Vaccine"/>
 
     <div class="mid" id="right_l">
-      <h2>Bangkok, Thailand</h2>
-      <p>Bangkok is the most popular destination in the world, and for good reason. With its abundant
-		 parks and beaches, this destination is ideal for people who want to really get out there and
-		 experience mother nature.</p>
-<?php
-  if (isset($_SESSION["username"])){
-    echo "<p><a href='thailand.php'>I'm interested.</a></p>";
-  }
-?>
+      <h2>Travel Restrictions</h2>
+      <p>All travelers must apply a Thailand Pass before travel. To apply all travelers
+      need to provide passport profile page and need to obtain an approved medical insurance.</p>
+      <p>Vaccinated travelers must provide proof of vaccination.</p>
+      <p>Unvaccinated travelers need to provide a negative PCR test taken no more than 72
+      hours before the arrival date, or book at an approved quarantine hotel and take
+      a pre-booked PCR test on arrival.</p>
+      <p>For more information click <a href="https://www.thaiembassy.com/travel-to-thailand/thailand-travel-restrictions">here</a>.</p>
     </div>
 
     <p class="blank_column_right">
