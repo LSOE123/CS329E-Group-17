@@ -28,17 +28,11 @@
    $username = $_GET['username'];
    $password = $_GET['password'];
 
-   // Escape User Input to help prevent SQL Injection
-   //$lastName = $mysqli->real_escape_string($lastName);
-   //$firstName = $mysqli->real_escape_string($firstName);
+   $username = $mysqli->real_escape_string($username);
+   $password = $mysqli->real_escape_string($password);
 
-   //build query
-   //echo "<code>...Building query</code><br>";
    $query = "SELECT * FROM joycompass WHERE username = '$username' AND password = '$password'";
-   //SELECT * FROM joycompass WHERE username = "goodbye" AND password = "hello"
 
-   //Execute query
-   //echo "<code>...Executing query</code><br><br>";
    $result = $mysqli->query($query); //or die($mysqli->error);
 
    if (mysqli_num_rows($result)==0) {
