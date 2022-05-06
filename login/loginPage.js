@@ -1,13 +1,13 @@
 var form_el = document.getElementById("textForm")
 
 
-form_el.addEventListener("submit", function(evt) {
+form_el.addEventListener("click", function(evt) {
     evt.preventDefault()
     validate()
 })
 
 function validate(){
-    var username = document.getElementById('userName').value
+    var username = document.getElementById('username').value
     var password = document.getElementById('password').value
 
 
@@ -23,37 +23,37 @@ function validate(){
     }
     else if(!numeric(password)){
         window.alert("Invalid username or password")
-        return 
+        return
     }
     else if(!LowerCase(password)){
         window.alert("Invalid username or password")
-        return 
+        return
     }
     else if(!numeric(username)){
         window.alert("Invalid username or password")
-        return 
+        return
     }
     else if(!isNaN(firstLetter)){
         window.alert("Invalid username or password")
-        return 
+        return
     }
-    
+
     else if(!UpperCase(password)){
         window.alert("Invalid username or password")
-        return 
+        return
     }
     else if(!digit(password)){
         window.alert("Invalid username or password")
-        return 
+        return
     }
     else{
         console.log('validated')
         window.alert("User Validated!")
-        return 
+        return
     }
 }
 
-function numeric(iTxt){ 
+function numeric(iTxt){
     var letters = /^[0-9a-zA-Z]+$/;
     if(iTxt.match(letters)){
         return true

@@ -12,40 +12,47 @@
 
       <!-- Template Main CSS File -->
       <link href="main.css" rel="stylesheet">
+
    </head>
 
 <body>
-   <script language = "javascript" type = "text/javascript">
+  <script language = "javascript" type = "text/javascript">
 
-        //Browser Support Code
-        function ajaxFunction(server,user,pwd,dbName){
-           var ajaxRequest;  // The variable that makes Ajax possible!
+       //Browser Support Code
+       function ajaxFunction(server,user,pwd,dbName){
+          var ajaxRequest;  // The variable that makes Ajax possible!
 
-           ajaxRequest = new XMLHttpRequest();
+          ajaxRequest = new XMLHttpRequest();
 
-           // Create a function that will receive data sent from the server and will update
-           // the div section in the same page.
+          // Create a function that will receive data sent from the server and will update
+          // the div section in the same page.
 
-           ajaxRequest.onreadystatechange = function(){
-              if(ajaxRequest.readyState == 4){
-                 var ajaxDisplay = document.getElementById('ajaxDiv');
-                 ajaxDisplay.innerHTML = ajaxRequest.responseText;
-              }
-           }
+          ajaxRequest.onreadystatechange = function(){
+             if(ajaxRequest.readyState == 4){
+                var ajaxDisplay = document.getElementById('ajaxDiv');
+                ajaxDisplay.innerHTML = ajaxRequest.responseText;
+             }
+          }
 
-           // Now get the value from user and pass it to server script.
+          // Now get the value from user and pass it to server script.
 
-           var username = document.getElementById('username').value;
-           var password = document.getElementById('password').value;
-           var queryString = "?password=" + password ;
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+          if (username == "" || password == ""){
+             window.alert("Please fill out all fields.");
+          }
+          else {
+            var queryString = "?password=" + password ;
 
-           queryString +=  "&username=" + username + "&server=" + server + "&user=" + user + "&pwd=" + pwd + "&dbName=" + dbName;
+            queryString +=  "&username=" + username + "&server=" + server + "&user=" + user + "&pwd=" + pwd + "&dbName=" + dbName;
 
-           ajaxRequest.open("GET", "search_users.php" + queryString, true);
-           ajaxRequest.send(null);
-        }
+            ajaxRequest.open("GET", "search_users.php" + queryString, true);
+            ajaxRequest.send(null);
+          }
+       }
 
-   </script>
+  </script>
+
    <div class="header">
      <img src="Joy Compass-logos_transparent.png" alt="logo" />
      <h1>Joy Compass</h1>
@@ -76,12 +83,12 @@
 
    echo "<h2> Login </h2>";
 
-   echo "<form method=\"\" > <table> <tr><td>Username:</td>";
-   echo "<td> <input type = 'text' id = 'username' autofocus> </td>";
+   echo "<form id=\"textForm\" method = \"get\" > <table> <tr><td>Username:</td>";
+   echo "<td> <input type = 'text' id = 'username' autofocus required> </td>";
    echo "</tr> <tr>";
 
    echo "<td>Password:</td>";
-   echo "<td> <input type = 'password' id = 'password'> </td>";
+   echo "<td> <input type = 'password' id = 'password' required> </td>";
    echo "</tr> <tr> <td>";
 
    echo "<input type = \"button\" onclick = \"ajaxFunction('$server','$user',
@@ -89,10 +96,10 @@
    echo "<input type = \"reset\" value = \"reset\"> <br><br> ";
    echo "</td> </tr> </table> </form>";
 
-
 ?>
 
    <div id = 'ajaxDiv'> Please log in or <a href="createacc.php"> create account.</a> </div>
+
    <footer>
    	<br>
    	<span>&copy; Joy Compass | </span>
@@ -106,4 +113,4 @@
    </footer>
 
  </body>
- </html>
+</html>

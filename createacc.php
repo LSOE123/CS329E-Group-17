@@ -12,6 +12,7 @@
 
       <!-- Template Main CSS File -->
       <link href="main.css" rel="stylesheet">
+
    </head>
 
 <body>
@@ -37,12 +38,17 @@
 
            var username = document.getElementById('username').value;
            var password = document.getElementById('password').value;
-           var queryString = "?password=" + password ;
+           if (username == "" || password == ""){
+              window.alert("Please fill out all fields.");
+           }
+           else {
+             var queryString = "?password=" + password ;
 
-           queryString +=  "&username=" + username + "&server=" + server + "&user=" + user + "&pwd=" + pwd + "&dbName=" + dbName;
+             queryString +=  "&username=" + username + "&server=" + server + "&user=" + user + "&pwd=" + pwd + "&dbName=" + dbName;
 
-           ajaxRequest.open("GET", "new_users.php" + queryString, true);
-           ajaxRequest.send(null);
+             ajaxRequest.open("GET", "new_users.php" + queryString, true);
+             ajaxRequest.send(null);
+           }
         }
 
    </script>
@@ -76,12 +82,12 @@
 
    echo "<h2> Create Account </h2>";
 
-   echo "<form method=\"\" > <table> <tr><td>Username:</td>";
-   echo "<td> <input type = 'text' id = 'username' autofocus> </td>";
+   echo "<form id=\"textForm\" method = \"get\" > <table> <tr><td>Username:</td>";
+   echo "<td> <input type = 'text' id = 'username' autofocus required> </td>";
    echo "</tr> <tr>";
 
    echo "<td>Password:</td>";
-   echo "<td> <input type = 'password' id = 'password'> </td>";
+   echo "<td> <input type = 'password' id = 'password' required> </td>";
    echo "</tr> <tr> <td>";
 
    echo "<input type = \"button\" onclick = \"ajaxFunction('$server','$user',
